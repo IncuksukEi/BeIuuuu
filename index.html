@@ -52,39 +52,40 @@
             align-items: center;
             z-index: 101;
             text-align: center;
+            padding: 20px;
         }
 
         .countdown-screen h2 {
             font-family: 'Dancing Script', cursive;
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
 
         .countdown-screen p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
         }
 
         #countdown-timer {
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
 
         .timer-box {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            min-width: 90px;
+            min-width: 70px;
         }
 
         .timer-box span {
             display: block;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
         }
 
         .timer-box .label {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin-top: 5px;
         }
 
@@ -424,8 +425,8 @@
             font-weight: 500;
             white-space: pre-wrap;
             text-align: center;
-            /* Con trỏ nhập liệu nhỏ hơn và tinh tế hơn */
-            border-right: 0.04em solid transparent;
+            border-right: 0.08em solid transparent;
+            /* Reserve space */
             min-height: 100px;
         }
 
@@ -708,7 +709,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* Tăng kích thước con trỏ chuột "đũa phép" và điều chỉnh hot-spot */
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="rgba(255,215,0,0.9)" d="M12 2.1l2.3 4.6c.1.2.3.4.5.4l5.1.8c.6.1.8.8.4 1.2l-3.7 3.6c-.2.2-.2.4-.2.6l.9 5.1c.1.6-.5.1-.9.4l-4.5-2.4c-.2-.1-.5-.1-.7 0l-4.5 2.4c-.5.3-1.1-.2-.9-.7l.9-5.1c0-.2-.1-.4-.2-.6L2.3 9.1c-.4-.4-.2-1.1.4-1.2l5.1-.8c.2 0 .4-.2.5-.4L12 2.1z" stroke="white" stroke-width="1"/></svg>') 40 40, auto;
             /* 40 40 là tâm của con trỏ */
             background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
@@ -1048,7 +1048,7 @@
 
     <div class="countdown-screen" id="countdownScreen">
         <h2>Món quà nhỏ sẽ mở vào...</h2>
-        <p>...đúng ngày của em ❤️</p>
+        <p>...đúng ngày của bé ❤️</p>
         <div id="countdown-timer">
             <div class="timer-box"><span id="days">00</span><span class="label">Ngày</span></div>
             <div class="timer-box"><span id="hours">00</span><span class="label">Giờ</span></div>
@@ -1070,7 +1070,7 @@
     <div class="thankyou-screen" id="thankyouScreen">
         <div class="thankyou-box">
             <h2>Hí hí... anh biết ngay mà! 🥰</h2>
-            <p>Cảm ơn em đã yêu anh! <br>Giờ thì mở phong bì này ra xem có gì nè!</p>
+            <p>Cảm ơn bé iuuu đã yêu anh! <br>Giờ thì mở phong bì này ra xem có gì nè!</p>
             <button class="next-btn" id="revealEnvelopeBtn">Mở quà!</button>
         </div>
     </div>
@@ -1086,9 +1086,9 @@
                     <div class="front"></div>
                     <div class="heart-icon">💌</div>
                     <div class="letter">
-                        <h1>Gửi em yêu,</h1>
+                        <h1>Gửi bé iuuuu,</h1>
                         <p id="message-text"></p>
-                        <p class="signature">Chồng yêu của em</p>
+                        <p class="signature">Chồng yêu của bé</p>
                         <button class="next-surprise-btn" id="nextSurpriseBtn">Anh còn bất ngờ nữa nè...</button>
                     </div>
                 </div>
@@ -1098,13 +1098,13 @@
         <div class="fullscreen-screen" id="memoriesScreen">
             <h2>Góc Kỷ Niệm Của Tụi Mình</h2>
             <div class="photo-gallery">
-                <div class="photo-card" data-caption="Ngày đầu tiên của chúng mình ❤️">
+                <div class="photo-card" data-caption="Mình cùng đi chơi nè ❤️">
                     <img src="img1.jpg" alt="Kỷ niệm 1">
                 </div>
-                <div class="photo-card" data-caption="Chuyến đi chơi không thể nào quên!">
+                <div class="photo-card" data-caption="Cũng là đi chơi nữa nè!">
                     <img src="img2.jpg" alt="Kỷ niệm 2">
                 </div>
-                <div class="photo-card" data-caption="Khoảnh khắc thật chill...">
+                <div class="photo-card" data-caption="Khoảnh khắc thật chill hihi">
                     <img src="img3.jpg" alt="Kỷ niệm 3">
                 </div>
             </div>
@@ -1128,7 +1128,7 @@
                 <div class="heart-burst-container" id="heartBurstContainer"></div>
                 <canvas id="scratchCanvas"></canvas>
                 <div class="final-message">
-                    <p>Chúc mừng ngày 20/10, tình yêu của anh. <br>Yêu em rất nhiều! ❤️</p>
+                    <p>Chúc mừng ngày 20/10, tình yêu của anh. <br>Yêu bé rất nhiều! ❤️</p>
                 </div>
             </div>
             <button class="next-section-btn" id="toEpilogueBtn"
@@ -1157,7 +1157,7 @@
                     </defs>
                 </svg>
             </div>
-            <p id="epilogueText">Mãi yêu bé ❤️</p>
+            <p id="epilogueText">Mãi iuuuu bé nhìuuuu ❤️</p>
         </div>
 
         <div class="photo-modal" id="photoModal">
@@ -1205,15 +1205,35 @@
 
             let isMusicPlaying = false;
 
-            const message = "Nhân ngày 20/10, anh chúc người con gái tuyệt vời của anh luôn xinh đẹp, rạng rỡ và ngập tràn hạnh phúc.\n\nCảm ơn em đã đến và làm cho thế giới của anh trở nên thật ý nghĩa.\n\nMãi yêu em!";
+            const message = "Nhân ngày 20/10, anh chúc người con gái tuyệt vời của anh luôn xinh đẹp, rạng rỡ và ngập tràn hạnh phúc. Chúc bé iuuuu luôn vui vẻ và hạnh phúc bên anh nhé! \n\nCảm ơn em đã đến và làm cho thế giới của anh trở nên thật ý nghĩa.\n\nMãi iuuuu bé iu nhìuuu!";
             const messageEl = document.getElementById('message-text');
             let typeIndex = 0;
             const typingSpeed = 70;
 
             function handleCountdown() {
-                // BỎ QUA COUNTDOWN ĐỂ TEST
-                countdownScreen.style.display = 'none';
-                startScreen.classList.add('visible');
+                const targetDate = new Date('October 19, 2025 00:00:00').getTime();
+
+                const interval = setInterval(() => {
+                    const now = new Date().getTime();
+                    const distance = targetDate - now;
+
+                    if (distance < 0) {
+                        clearInterval(interval);
+                        countdownScreen.style.display = 'none';
+                        startScreen.classList.add('visible');
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById('days').innerText = String(days).padStart(2, '0');
+                    document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                    document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                    document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+                }, 1000);
             }
 
             function typeWriter() {
@@ -1262,7 +1282,7 @@
 
             noBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                alert('Ấy, không chọn được đâu bé ơi! 😂 Bấm CÓ đi nè!');
+                alert('Hông chọn được đâu á hí hí! 😂 Bấm CÓ đi nè!');
             });
 
             revealEnvelopeBtn.addEventListener('click', () => {
@@ -1311,16 +1331,16 @@
 
             // Reasons Logic
             const reasons = [
-                "Nụ cười của em.",
-                "Cách em quan tâm anh.",
-                "Sự mạnh mẽ của em.",
-                "Khiếu hài hước của em.",
-                "Cách em làm anh cảm thấy đặc biệt.",
-                "Ánh mắt của em.",
-                "Sự thông minh của em.",
-                "Vì em luôn là chính em.",
-                "Mọi món ăn em nấu.",
-                "Đơn giản vì đó là em!"
+                "Nụ cười của bé.",
+                "Cách bé quan tâm anh.",
+                "Sự mạnh mẽ của bé.",
+                "Khiếu hài hước của bé.",
+                "Cách bé làm anh cảm thấy đặc biệt.",
+                "Ánh mắt của bé.",
+                "Sự thông minh của bé.",
+                "Vì bé luôn là chính bé.",
+                "Mọi điều về bé.",
+                "Đơn giản vì đó là bé!"
             ];
             let currentReasonIndex = -1;
 
